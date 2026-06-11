@@ -51,7 +51,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('');
+            background-image: url('photos/photo1.jpg');
             background-size: cover;
             background-position: center;
             transform: scale(1.04);
@@ -281,7 +281,15 @@
     <div class="scroll-hint">↓</div>
 </section>
 
-
+<section class="photos">
+    <div class="container">
+        <h2 class="section-title fade-up">Наши виды</h2>
+        <div class="photos-grid">
+            <img src="photos/photo1.jpg" alt="Фото">
+            <img src="photos/photo2.jpg" alt="Фото">
+        </div>
+    </div>
+</section>
 
 <section class="amenities">
     <div class="container">
@@ -347,8 +355,8 @@
     if (bg) {
         const img = new Image();
         img.onload = () => bg.classList.add('loaded');
-        img.src = '';
-        bg.style.backgroundImage = `url('')`;
+        img.src = 'photos/photo1.jpg';
+        bg.style.backgroundImage = `url('photos/photo1.jpg')`;
     }
 
     const io = new IntersectionObserver(entries => {
